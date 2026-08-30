@@ -1,0 +1,1 @@
+drone = other.id;
