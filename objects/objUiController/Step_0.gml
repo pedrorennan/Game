@@ -1,0 +1,1 @@
+vidaAtual = global.vidaPlayer;

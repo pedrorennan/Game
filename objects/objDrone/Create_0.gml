@@ -1,3 +1,4 @@
+var distancia;
 spd = 1.5;
 alvo = noone;
 ativo = false;
@@ -9,7 +10,7 @@ function followPlayer()
 {
 	if (instance_exists(objPlayer)) 
 	{
-		var _dir = point_direction(x, y, objPlayer.x-20, objPlayer.y-20);
+		var _dir = point_direction(x, y, objPlayer.x-distancia, objPlayer.y-20);
 
 		x += lengthdir_x(spd, _dir);
 		y += lengthdir_y(spd, _dir);

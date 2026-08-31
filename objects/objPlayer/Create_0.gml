@@ -1,6 +1,9 @@
 // Inherit the parent event
 event_inherited();
 
+iFrame = false;
+
+vivo = true;
 atacando = false;
 
 spd = 2;
@@ -9,11 +12,16 @@ grav = .3;
 cooldown = 0;
 cooldownTime = game_get_speed(gamespeed_fps) * 1;
 
+cooldownIFrame = 0;
+
+xDir = 0;
+
 jumpSpeed = -5;
 
 spriteRun = sprPlayerRun;
 spriteIdle = sprPlayerIdle;
 spriteAttack = sprPlayerAttack;
+
 
 function alterarSprite(sprite) 
 {
@@ -77,6 +85,9 @@ function repararDrone()
 		if (keyboard_check(ord("E")))
 		{
 			drone.ativo = true;
+			objController.dronesAtivos+=1;
+			drone.distancia = objController.dronesAtivos * 3;
+			show_debug_message(objController.dronesAtivos);
 		}
 	}
 }}
@@ -95,3 +106,15 @@ function attack()
 		}
 	}
 }
+
+function death() 
+{
+	if (global.vidaPlayer <= 0) 
+	{
+		vivo = false;
+		alterarSprite(sprPlayerDeath);
+		if (image_index >= image_number - 1) {instance_destroy()}
+		//instance_destroy();
+	}
+}
+
