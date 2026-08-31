@@ -1,13 +1,24 @@
 // Inherit the parent event
 event_inherited();
 
+atacando = false;
+
 spd = 2;
 grav = .3;
+
+cooldown = 0;
+cooldownTime = game_get_speed(gamespeed_fps) * 1;
 
 jumpSpeed = -5;
 
 spriteRun = sprPlayerRun;
 spriteIdle = sprPlayerIdle;
+spriteAttack = sprPlayerAttack;
+
+function alterarSprite(sprite) 
+{
+	sprite_index = sprite;
+}
 
 function input_player() 
 {
@@ -18,25 +29,24 @@ function input_player()
 	jump = keyboard_check(vk_space);
 	
 	xDir = right - left;
-	
-	spdh = (right - left) * spd;
+	if (!atacando) {spdh = (right - left) * spd;}
 	
 	var onGround = place_meeting(x,y+1, objBlock);
 	
-	if (xDir != 0) 
+	if (xDir != 0 && !atacando) 
 	{
 		image_xscale = xDir;
 	}
 	
 	if (onGround) 
 	{
-		if (xDir != 0) 
+		if (xDir != 0 && !atacando) 
 		{
-			sprite_index = spriteRun;
+			alterarSprite(spriteRun)
 		}
-		else 
+		else if (xDir == 0 && !atacando)
 		{
-			sprite_index = spriteIdle;
+			alterarSprite(spriteIdle)
 		}
 	}
 	
@@ -51,6 +61,11 @@ function input_player()
 	{
 		spdv += grav;
 	}
+	
+	if (keyboard_check(ord("F")) && cooldown <= 0) 
+	{
+		atacando = true;
+		alterarSprite(spriteAttack);
 }
 
 function repararDrone() 
@@ -64,7 +79,19 @@ function repararDrone()
 			drone.ativo = true;
 		}
 	}
-	else 
+}}
+
+function attack() 
+{
+
+	if (place_meeting(x,y,objEnemy))
 	{
+		var enemy = instance_place(x,y,objEnemy) 
+		{
+			if (enemy != noone) 
+			{
+				instance_destroy(enemy);
+			}
+		}
 	}
 }

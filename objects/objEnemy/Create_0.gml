@@ -3,6 +3,8 @@ alvo = objTotem;
 modo = "andar";
 atirou = false;
 
+pv = 1;
+
 function followTotem() 
 {
 	if (instance_exists(alvo)) 
