@@ -28,6 +28,7 @@
   "name":"SemNomeAinda",
   "resources":[
     {"id":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},},
+    {"id":{"name":"objColisaoPlayer","path":"objects/objColisaoPlayer/objColisaoPlayer.yy",},},
     {"id":{"name":"objColisor","path":"objects/objColisor/objColisor.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
     {"id":{"name":"objDrone","path":"objects/objDrone/objDrone.yy",},},
@@ -35,6 +36,7 @@
     {"id":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},},
     {"id":{"name":"objLifeHeart","path":"objects/objLifeHeart/objLifeHeart.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"objSpawner","path":"objects/objSpawner/objSpawner.yy",},},
     {"id":{"name":"objTotem","path":"objects/objTotem/objTotem.yy",},},
     {"id":{"name":"objUiController","path":"objects/objUiController/objUiController.yy",},},
     {"id":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
@@ -45,6 +47,7 @@
     {"id":{"name":"bg4","path":"sprites/bg4/bg4.yy",},},
     {"id":{"name":"bg5","path":"sprites/bg5/bg5.yy",},},
     {"id":{"name":"sprBlock","path":"sprites/sprBlock/sprBlock.yy",},},
+    {"id":{"name":"sprcolisaoplayer","path":"sprites/sprcolisaoplayer/sprcolisaoplayer.yy",},},
     {"id":{"name":"sprDrone","path":"sprites/sprDrone/sprDrone.yy",},},
     {"id":{"name":"sprDroneAttak","path":"sprites/sprDroneAttak/sprDroneAttak.yy",},},
     {"id":{"name":"sprDroneCharge","path":"sprites/sprDroneCharge/sprDroneCharge.yy",},},

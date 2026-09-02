@@ -1,4 +1,4 @@
-var distancia;
+distancia = 10;
 spd = 1.5;
 alvo = noone;
 ativo = false;
@@ -10,10 +10,8 @@ function followPlayer()
 {
 	if (instance_exists(objPlayer)) 
 	{
-		var _dir = point_direction(x, y, objPlayer.x-distancia, objPlayer.y-20);
-
-		x += lengthdir_x(spd, _dir);
-		y += lengthdir_y(spd, _dir);
+		x = objPlayer.x - distancia;
+		y = objPlayer.y - 20;
 		
 	}
 }

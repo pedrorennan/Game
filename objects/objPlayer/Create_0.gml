@@ -86,7 +86,7 @@ function repararDrone()
 		{
 			drone.ativo = true;
 			objController.dronesAtivos+=1;
-			drone.distancia = objController.dronesAtivos * 3;
+			drone.distancia = drone.distancia * objController.dronesAtivos;
 			show_debug_message(objController.dronesAtivos);
 		}
 	}

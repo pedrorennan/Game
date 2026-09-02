@@ -3,7 +3,7 @@
   "%Name":"sprPlayerAttack",
   "bboxMode":2,
   "bbox_bottom":18,
-  "bbox_left":12,
+  "bbox_left":24,
   "bbox_right":105,
   "bbox_top":4,
   "collisionKind":1,
