@@ -28,6 +28,7 @@
   "name":"SemNomeAinda",
   "resources":[
     {"id":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},},
+    {"id":{"name":"objBoss","path":"objects/objBoss/objBoss.yy",},},
     {"id":{"name":"objColisaoPlayer","path":"objects/objColisaoPlayer/objColisaoPlayer.yy",},},
     {"id":{"name":"objColisor","path":"objects/objColisor/objColisor.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
@@ -56,7 +57,7 @@
     {"id":{"name":"sprEnemyIdle","path":"sprites/sprEnemyIdle/sprEnemyIdle.yy",},},
     {"id":{"name":"sprEnemyRun","path":"sprites/sprEnemyRun/sprEnemyRun.yy",},},
     {"id":{"name":"sprHeart","path":"sprites/sprHeart/sprHeart.yy",},},
-    {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},},
+    {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},},
     {"id":{"name":"sprPlayerAttack","path":"sprites/sprPlayerAttack/sprPlayerAttack.yy",},},
     {"id":{"name":"sprPlayerDamage","path":"sprites/sprPlayerDamage/sprPlayerDamage.yy",},},
     {"id":{"name":"sprPlayerDeath","path":"sprites/sprPlayerDeath/sprPlayerDeath.yy",},},

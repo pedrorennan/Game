@@ -36,5 +36,5 @@
     "path":"sprites/sprcolisaoplayer/sprcolisaoplayer.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -1,0 +1,1 @@
+instance_create_depth(100, y, 1, enemy);

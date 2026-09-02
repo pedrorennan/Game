@@ -5,3 +5,8 @@ if (!instance_exists(objPlayer))
 		room_restart();
 	}
 }
+
+if (wave == 5) 
+{
+	objSpawner.enemy = objBlock;
+}
