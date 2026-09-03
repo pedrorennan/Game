@@ -101,7 +101,7 @@ function attack()
 		{
 			if (enemy != noone) 
 			{
-				instance_destroy(enemy);
+				enemy.pv--;
 			}
 		}
 	}

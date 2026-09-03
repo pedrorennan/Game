@@ -1,1 +1,1 @@
-instance_create_depth(100, y, 1, enemy);
+instance_create_layer(100, 100, "instances", enemy);

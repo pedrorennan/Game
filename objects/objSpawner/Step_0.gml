@@ -1,8 +1,9 @@
 if (enemy == objEnemy) 
 {
-	spawnarMinions();	
+	spawnar();	
 }
 else 
 {
-	spawnarBoss();
+	alarm[0] = -1;
 }
+

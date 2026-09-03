@@ -9,9 +9,12 @@ else if (modo == "atacar")
 
 if (pv <= 0)
 {
+	
 	sprite_index = sprEnemyDamage;
 	if (image_index >= image_number - 1) 
 	{
+		objSpawner.inimigosMortos++;
+		objController.inimigosMortosTotais++;
 		instance_destroy();	
 	}
 }

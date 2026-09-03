@@ -6,7 +6,9 @@ if (!instance_exists(objPlayer))
 	}
 }
 
-if (wave == 5) 
+if (wave == 2) 
 {
-	objSpawner.enemy = objBlock;
+	objSpawner.enemy = objBoss;
 }
+
+show_debug_message(wave)
